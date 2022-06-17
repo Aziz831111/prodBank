@@ -1,0 +1,1640 @@
+$black: #0F0F0E
+$gold: #FFED00
+$white: #FEFEFE
+$gray1: #F4F5F5
+$gray2: #7F7F7F
+$gray3: #333333
+
+ul > li 
+	list-style-type: none
+ul 
+	padding: 0
+body 
+	margin: 0
+
+*
+	box-sizing: border-box !important
+
+@font-face 
+	font-family: Futura PT 
+	src: url("../fonts/FuturaPT-Book.ttf") format('truetype')
+	font-weight: normal
+	font-style: normal
+
+@font-face 
+	font-family: Futura PT 
+	src: url("../fonts/FuturaPT-Heavy.ttf") format('truetype')
+	font-weight: bold
+	font-style: normal
+
+@font-face 
+	font-family: Gotham Pro
+	src: url("../fonts/GothamPro-Black.ttf") format('truetype')
+	font-weight: bold
+	font-style: normal
+
+html
+	box-sizing: border-box
+	color: #333333 !important
+	//styleName: Body;
+	font-family: FuturaPT, sans-serif
+	font-size: 14px 
+	font-style: normal
+	font-weight: 400
+	line-height: 20px
+	letter-spacing: 0em
+	text-align: left
+	color: $gray3 !important
+	& > *
+		box-sizing: border-box
+		font-family: FuturaPT, sans-serif
+		font-size: 14px 
+		font-style: normal
+		font-weight: 400
+		line-height: 20px
+
+h1, h2, h3 
+	font-family: Futura PT
+	font-size: 44px
+	font-style: normal
+	font-weight: 600
+	line-height: 56px
+	letter-spacing: 0em
+	color: $black
+	margin: 0
+
+h2 
+	font-size: 32px
+	line-height: 41px
+
+h3 
+	font-size: 20px
+	line-height: 26px
+	color: $gray3
+
+p, h4 
+	font-family: Futura PT
+	font-size: 14px
+	font-style: normal
+	font-weight: 400
+	line-height: 28px
+	letter-spacing: 0em
+	color: $gray3
+	margin: 0
+
+.h2_gotham
+	font-family: Gotham Pro, sans-serif
+	font-weight: 900
+	font-size: 45px
+	line-height: 43px
+	color: #D8D8D8
+
+.h4_light
+	color: $gray2
+
+a
+	text-decoration: none
+	color: inherit
+
+@media screen and (max-width: 860px)
+	h1 
+		font-size: 28px
+		line-height: 36px
+	h2 
+		font-size: 24px
+		line-height: 31px
+	h3 
+		font-size: 20px
+		line-height: 26px
+
+.wrap
+	width: 100%
+	max-width: 960px
+	margin-left: auto
+	margin-right: auto
+
+header, section
+	width: 100%
+
+.btn
+	display: inline-block
+	background: $gold
+	border-radius: 6px
+	padding: 6px 20px
+	font-size: 14px
+	line-height: 28px
+	letter-spacing: 0.04em
+	transition: all 0.5s
+	&:hover
+		cursor: pointer 
+		background: $black
+		color: $gold
+	&__stroke
+		padding: 3.5px 20px
+		border: 2.3px solid #0F0F0E
+		background: inherit
+		& > img
+			height: 15px
+			width: 13.7px
+			margin-top: 5px
+			margin-right: 5px
+		&:hover
+			background: $gray1
+			color: inherit
+
+.shadow
+	background: #fefefe
+	border-radius: 10px
+	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3), 0px 12px 12px 0px rgba(61, 54, 56, 0.07)
+
+.form
+	display: flex
+	flex-direction: column
+	align-items: center
+	width: 435px
+	padding: 38px 0px 0px 0px
+	&_caption
+		margin-top: 26px
+		text-align: center
+		line-height: 20px
+	&_btn
+		position: relative
+		top: 20px
+
+header
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	min-height: 60px
+	z-index: 999
+	background: #FEFEFE
+	box-shadow: 0px 4px 4px rgba(15, 15, 14, 0.1)
+	& > .wrap 
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+
+.header
+	&_menu 
+		display: inline-block
+		& > li
+			display: inline-block
+			height: 0
+			margin-right: 25px
+			line-height: 20px
+			background: #FEFEFE
+			&:first-child
+				display: none
+			&:nth-child(2) 
+				margin-right: 45px
+	&_burger
+		display: none
+		margin: 22px 20px 19px 0
+	&__show
+		top: 0px !important
+		height: 53px !important
+	&_logo_burger
+		margin-top: 12px
+		display: none
+		&:hover
+			cursor: pointer
+
+.main 
+	margin-top: 120px
+	& > .wrap
+		max-width: 775px
+	&_navigation
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+.otpiska
+	margin-top: 75px
+	height: 320px
+
+.lead
+	margin-top: 75px
+	height: 320px
+
+.btn__nav
+	display: inline-block
+	border-radius: 6px
+	padding: 6px 20px
+	font-size: 14px
+	line-height: 28px
+	letter-spacing: 0.04em
+	transition: background 0.5s
+	&:hover
+		color: inherit
+		background: inherit
+		cursor: pointer
+	&__active
+		border: none
+		background: $gold
+		color: $black
+		&:hover
+			background: $gold
+
+.wrap__tight
+	width: 775px
+
+.folder
+	position: absolute
+	top: 0
+	left: 0
+	pointer-events: none
+	opacity: 0%
+	margin-bottom: 65px
+	& > .wrap
+		& > ul 
+			margin-top: 25px
+			margin-left: 75px
+			& > li 
+				font-family: Futura PT
+				font-weight: 400
+				position: relative
+				line-height: 20px
+				margin-bottom: 10px
+				&:before 
+					position: absolute
+					top: 7px
+					left: -18px
+					display: inline-block
+					content: ''
+					width: 6px
+					height: 6px
+					background: $gray3
+					border-radius: 3px
+		& > h2 
+			margin-top: 35px
+		& > p 
+			margin-bottom: 10px
+			line-height: 20px
+			margin-left: 75px
+		& > h3 
+			margin-top: 25px
+			margin-bottom: 12px
+	&_li__bold
+		font-weight: 600
+
+.folder__visible
+	position: static
+	pointer-events: auto
+	opacity:100%
+
+.folder3
+	& h2 
+		margin-bottom: 25px
+	& p 
+		margin-bottom: 10px
+	& ul 
+		& > li 
+			text-decoration: underline
+			&:before
+				top: 2px !important
+				width: 11px !important
+				height: 15px !important
+				background: url("../img/icons/download.svg") no-repeat center center !important
+
+.btn__blue
+	display: inline-block
+	background: #279ED1
+	border: 2.3px solid #279ED1
+	color: #fefefe
+	border-radius: 6px
+	padding: 5px 20px 7px 20px
+	font-size: 14px
+	line-height: 20px
+	letter-spacing: 0.04em
+	transition: all 0.5s
+	& > img 
+		position: relative
+		top: 4px
+		margin-left: 12px
+		&:last-child
+			display: none
+	&:hover
+		background: #fefefe
+		color: #279ED1
+		cursor: pointer
+		& > img
+			display: none
+			&:last-child
+				display: inline-block
+.folder4
+	&_container
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: flex-start
+		width: 100%
+		margin-top: 25px
+	&_card
+		width: 460px
+		padding: 35px 25px
+		& > h3 
+			margin-bottom: 7px
+		& > p 
+			line-height: 20px
+			margin-bottom: 20px
+		& input[type="text"]
+			width: 100%
+			height: 40px
+			padding-left: 20px
+			padding-right: 20px
+			padding-top: 10px
+			padding-bottom: 10px
+			margin-bottom: 12px
+			border-radius: 12px
+			background: #F4F5F5
+			border: none
+			outline: none
+			font-size: 18px
+			line-height: 18px
+			font-family: Futura PT
+			-webkit-appearance: none
+			-ms-appearance: none
+			-moz-appearance: none
+			appearance: none
+		& textarea
+			width: 100%
+			padding-left: 20px
+			padding-right: 20px
+			padding-top: 10px
+			padding-bottom: 10px
+			margin-bottom: 12px
+			border-radius: 12px
+			background: #F4F5F5
+			border: none
+			outline: none
+			font-size: 18px
+			line-height: 18px
+			font-family: Futura PT
+			-webkit-appearance: none
+			-ms-appearance: none
+			-moz-appearance: none
+			appearance: none
+			resize: none
+			overflow: auto !important
+			&::-webkit-scrollbar
+				display: none
+ 
+		& button[type="submit"]
+			background: $gold
+			border-radius: 6px
+			padding: 6px 20px
+			font-size: 14px
+			line-height: 28px
+			letter-spacing: 0.04em
+			transition: all 0.5s
+			-webkit-appearance: none
+			-ms-appearance: none
+			-moz-appearance: none
+			appearance: none
+			border: none
+			outline: none
+			&:hover
+				cursor: pointer 
+				background: $black
+				color: $gold
+		& .btn__blue
+			float: right
+			&:after 
+				display: block
+				content: ''
+				clear: both
+	&_box
+		display: inline-block
+		margin-left: 40px
+		& > h3 
+			position: relative
+			margin-top: 15px
+			margin-bottom: 7px
+		& > p 
+			line-height: 20px
+		& .folder4_tel
+			&:before 
+				position: absolute
+				top: 3px
+				left: -37px
+				display: inline-block
+				content: ''
+				width: 24px
+				height: 27px
+				background: url("../img/icons/tel.svg") no-repeat center center
+		& .folder4_email
+			&:before 
+				position: absolute
+				top: 0px
+				left: -35px
+				display: inline-block
+				content: ''
+				width: 24px
+				height: 27px
+				background: url("../img/icons/mail.svg") no-repeat center center
+
+@media screen and (max-width: 860px)
+	.folder4
+		&_container
+			flex-direction: column
+			justify-content: flex-start
+		&_box
+			margin-top: 30px
+
+@media screen and (max-width: 500px)
+	.folder4
+		&_card
+			width: 100%
+		& .btn__blue
+			margin-top: 15px
+			float: none
+
+
+@media screen and (max-width: 775px)
+	.main
+		margin-top: 75px
+		&_navigation
+			flex-wrap: wrap
+			justify-content: center
+			& li 
+				margin-top: 15px
+				margin-right: 15px
+	.folder
+		margin-bottom: 50px
+
+
+@media screen and (max-width: 1100px)
+	.wrap
+		width: 90%
+
+@media screen and (max-width: 860px)
+	header 
+		& .btn
+			display: none
+		& > .wrap
+			flex-direction: column
+			align-items: flex-start
+			width: 100%
+	.header
+		&_menu
+			position: fixed
+			left: 0
+			display: flex
+			flex-direction: column
+			width: 100%
+			margin: 0 !important
+			z-index: 2
+			& > li 
+				position: relative
+				top: -300px
+				left: 0
+				width: 100%
+				padding-left: 5%
+				transition: all 0.1s
+				border-bottom: 2.3px solid $gray1
+				z-index: 3
+				transition: all 1s
+				&:first-child
+					display: inline-block
+					border-top: none
+					z-index: 9
+					top: 0
+					left: 0
+					width: 100%
+					height: 65px
+					& > img 
+						float: right
+						&:after 
+							display: block
+							content: ''
+							clear: both
+
+				&:nth-child(2)
+					display: none
+				&:last-child 
+					background: #FEFEFE
+					border-bottom: none
+					box-shadow: 0px 4px 4px rgba(15, 15, 14, 0.1)
+				& > a 
+					display: inline-block
+					width: 100%
+					padding: 15px 0 15px 0
+		&_burger
+			display: inline-block
+			&:hover
+				cursor: pointer
+		&_logo_burger
+			display: inline-block
+
+.first
+	padding-top: 90px
+	margin-top: 65px
+	background: url("../img/bg/first.jpg")
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: right
+	& h1, h3 
+		display: block
+		color: $white
+	& h3 
+		margin-top: 30px
+	&_text
+		display: inline-block
+		width: 50%
+		margin-bottom: 120px
+	&_form
+		float: right
+		&:after 
+			display: block
+			content: ''
+			clear: both
+
+@media screen and (max-width: 990px)
+	.first 
+		&_text
+			width: 40%
+
+@media screen and (max-width: 860px)
+	.first
+		padding-top: 60px
+		padding-bottom: 50px
+		background-position: 90%
+		&_form
+			float: none
+			margin-left: auto
+			margin-right: auto
+		&_text
+			width: 100%
+			margin-bottom: 54px
+			text-align: center
+		& h3 
+			margin-top: 15px
+
+@media screen and (max-width: 500px)
+	.first
+		&_form
+			width: 100%
+			& .form_label
+				top: 14px
+				left: -20px
+			& .form_label2
+				left: 200px
+
+.second
+	overflow: hidden
+	& > .wrap >  h2 
+		margin-top: 95px
+		margin-bottom: 20px
+	&_card
+		width: 225px
+		min-height: 315px
+		padding: 30px 25px 0 25px
+		transition: all 0.2s
+		&:hover
+			-webkit-transform: scale(1.05)
+			-ms-transform: scale(1.05)
+			transform: scale(1.05)
+
+	& .h2_gotham
+		float: right
+		&:after 
+			content: ''
+			display: block
+			clear: both
+	& h3 
+		line-height: 24px
+		margin-top: 15px
+	& p 
+		line-height: 20px
+		margin-top: 7px
+	&_btn
+		display: flex
+		justify-content: space-around
+		width: 100%
+		margin-top: 5px
+
+@media screen and (max-width: 860px)
+	.second > .wrap > h2
+		margin-top: 50px
+
+.third
+	& > .wrap 
+		& > h2 
+			margin-top: 95px
+	&_slider
+		top: -40px
+		&-arrows
+			position: relative
+			top: -40px
+
+.plan
+	width: 470px
+	margin-right: 20px
+	min-height: 397px
+	padding-top: 216px
+	padding-left: 35px
+	&:last-child
+		margin-right: 0
+	&_1
+		background: url("../img/bg/plan-1.png") no-repeat right top #C8F0EB
+	&_2
+		background: url("../img/bg/plan-2.png") no-repeat right top #C3F1FA
+	&_3
+		background: url("../img/bg/plan-3.png") no-repeat right top #FBD983
+	&_4
+		padding-top: 194px
+		background: url("../img/bg/plan-4.png") no-repeat right top #BBF1D4
+	&_card
+		width: 175px
+		min-height: 161px
+		padding-top: 17px
+		background: #fefefe
+		transition: all 0.2s
+		&:hover
+			-webkit-transform: scale(1.05)
+			-ms-transform: scale(1.05)
+			transform: scale(1.05)
+		& > h3 
+			margin-left: 20px
+			margin-bottom: 7px
+		& > p 
+			line-height: 20px
+			margin-left: 20px
+			margin-bottom: 15px
+	&_btn
+		width: 100%
+		height: 40px
+		padding: 0 20px 0 20px
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		background: $gold
+		border-bottom-right-radius: 10px
+		border-bottom-left-radius: 10px
+		line-height: 28px
+		letter-spacing: 0.04em
+		transition: all 0.5s
+		&:hover
+			cursor: pointer 
+			background: $black
+			color: $gold
+
+@media screen and (max-width: 860px)
+	.third > .wrap > h2
+		margin-top: 50px
+
+@media screen and (max-width: 560px)
+	.plan
+		width: 100vw
+		margin-right: 0
+
+.forth
+	& > .wrap
+		& > h2 
+			margin-top: 95px
+			margin-bottom: 5px
+		& > h3 
+			max-width: 75%
+			margin-bottom: 20px
+
+.forth
+	overflow: hidden
+
+.var
+	position: relative
+	margin-top: 28px
+	margin-right: 20px
+	width: 306px
+	height: 100px
+	background: #fefefe
+	transition: all 0.2s
+	poiner-events: none
+	&:hover
+		-webkit-transform: scale(1.05)
+		-ms-transform: scale(1.05)
+		transform: scale(1.05)
+	&:last-child
+		margin-right: 0
+	& > img 
+		position: absolute
+		top: -28px
+		left: 25px
+		poiner-events: none
+	& > h3 
+		margin-left: 165px
+		margin-top: 38px
+
+
+@media screen and (max-width: 860px)
+	.forth > .wrap > h2
+		margin-top: 50px
+
+.fifth
+	& > .wrap
+		& > h2 
+			margin-top: 95px
+			margin-bottom: 20px
+	&_card
+		display: flex
+		flex-direction: row
+		align-items: start
+		width: 470px
+		min-height: 150px
+		margin-right: 20px
+		margin-bottom: 20px
+		transition: all 0.2s
+		&:hover
+			-webkit-transform: scale(1.05)
+			-ms-transform: scale(1.05)
+			transform: scale(1.05)
+		&:last-child
+			margin-right: 0
+		&> img 
+			margin-right: 20px
+	&_text
+		padding-top: 20px
+		& > h3 
+			margin-bottom: 7px
+		& > p 
+			line-height: 20px
+@media screen and (min-width: 861px)
+	.fifth
+		&_card
+			width: 49%
+			margin-right: 0
+	.fifth_slider
+		width: 100%
+		&-list 
+			width: 100%
+		&-track 
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
+			justify-content: space-between
+			align-items: start
+			width: 100%
+
+@media screen and (max-width: 1066px) and (min-width: 861px)
+	.fifth
+		&_card
+			width: 49%
+			margin-right: 0	
+
+@media screen and (max-width: 960px)
+	.fifth > .wrap > h2 
+		margin-top: 50px
+
+.sixth
+	& > .wrap
+		& > h2 
+			margin-top: 95px
+			margin-bottom: 20px
+	&_card
+		display: flex
+		flex-direction: column
+		align-items: start
+		width: 306px
+		padding: 20px 25px
+		margin-bottom: 20px
+		transition: all 0.2s
+		&:hover
+			-webkit-transform: scale(1.05)
+			-ms-transform: scale(1.05)
+			transform: scale(1.05)
+	&_text
+		& > h3 
+			margin-top: 15px
+			margin-bottom: 7px
+		&  > p
+			line-height: 20px
+
+@media screen and (min-width: 1066px)
+	.sixth_card
+		height: 263px
+
+@media screen and (max-width: 1065px)
+	.sixth
+		&_card
+			width: 90vw
+			margin-right: 0
+		&_slider
+			&-track
+				font-display: column
+
+@media screen and (max-width: 960px)
+	.sixth > .wrap > h2 
+		margin-top: 50px
+
+@media screen and (min-width: 861px)
+	.sixth
+		&_card
+			margin-right: 0
+	.sixth_slider
+		width: 100%
+		&-list 
+			width: 100%
+		&-track 
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
+			justify-content: space-between
+			align-items: start
+			width: 100%
+
+.seventh
+	background: linear-gradient(86.03deg, #C8F0EB 13.54%, #C3F1FA 89.17%)
+	width: 960px
+	margin-top: 55px
+	margin-left: auto
+	margin-right: auto
+	& > .wrap
+		padding: 40px 65px 30px 65px
+		& > h2 
+			width: 100%
+			margin-bottom: 5px
+		& > h3 
+			margin-bottom: 15px
+			max-width: 60%
+		& ul, li 
+			line-height: 30px
+		& ul 
+			margin-bottom: 20px
+		& > ul > li:before 
+			content: ''
+			display: inline-block
+			width: 21px
+			height: 19px
+			margin-right: 6px
+			background: url("../img/icons/Unordered list.svg") no-repeat center center 
+		& > img
+			float: right
+			position: relative
+			top: -100px
+			&:after 
+				display: block
+				content: ''
+				clear: both
+@media screen and (max-width: 960px)
+	.seventh
+		width: 100%
+		margin-top: 50px
+		& > .wrap
+			padding-left: 0
+			padding-right: 0
+
+@media screen and (max-width: 1065px)
+	.seventh
+		& > .wrap
+			& > h3 
+				width: 100%
+				margin-bottom: 0
+			& > img
+				float: none
+				position: relative
+				top: 0
+				left: -17px
+			& > ul 
+				margin-top: 0
+.eighth
+	& > .wrap 
+		& > h2 
+			margin-top: 178px
+			margin-bottom: 20px
+	&_video
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: start
+		flex-wrap: wrap
+		max-width: 620px
+	& .video_block
+		background-size: cover
+		&:nth-child(1)
+			background: url("../img/gif/feedback1.gif") no-repeat
+			background-size: cover
+		&:nth-child(2)
+			background: url("../img/gif/feedback2.gif") no-repeat
+			background-size: cover
+		&:nth-child(6)
+			background: url("../img/gif/feedback6.gif") no-repeat
+			background-size: cover
+
+@media screen and (min-width: 1065px)
+	.eighth
+		& > .wrap
+			& > h2 
+				float: left
+				max-width: 321px
+		&_video
+			position: relative
+			//top: -270px
+			float: right
+
+@media screen and (max-width: 1064px)
+	.eighth
+		& > .wrap
+			& > h2 
+				margin-top: 95px
+				margin-bottom: 25px
+			& > .btn
+				margin-top: 10px
+
+@media screen and (min-width: 741px)
+	.video_block
+		width: 120px
+		height: 120px
+		margin-right: 20px
+		transition: all 0.2s
+		&:hover
+			-webkit-transform: scale(1.05)
+			-ms-transform: scale(1.05)
+			transform: scale(1.05)
+			cursor: pointer
+		&__large
+			width: 200px
+			height: 200px
+			margin-bottom: 20px
+		&:nth-child(1), &:nth-child(3), &:nth-child(4)
+			margin-top: 80px
+		&:nth-child(4)
+			margin-right: 0
+
+@media screen and (max-width: 740px)
+	.eighth
+		& > .wrap
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: space-between
+			& > h2 
+				max-width: 321px
+				margin-top: 50px
+		&_video
+			width: 100%	
+			max-width: 315px
+	.video_block
+		width: 80px
+		height: 80px
+		margin-right: 15px
+		margin-bottom: 15px
+		&__large
+			width: 125px
+			height: 125px
+			&2
+				margin-right: 0
+		&:nth-child(7)
+			display: block
+			position: absolute
+			bottom: 0
+			right: 0
+			width: 10px
+			height: 10px
+			opacity: 0.001
+			z-index: -99999
+		&:nth-child(3)
+			margin-right: 0
+		&:nth-child(1), &:nth-child(3)
+			margin-top: 45px
+
+.nineth
+	margin-top: 228px
+	& > .wrap
+		display: flex 
+		flex-direction: row 
+		justify-content: space-between
+		align-items: center
+
+.map
+	&_card
+		width: 328px
+		padding: 35px 25px
+		transition: all 0.2s
+		&:hover
+			-webkit-transform: scale(1.05)
+			-ms-transform: scale(1.05)
+			transform: scale(1.05)
+		& > h3 
+			margin-bottom: 7px
+		& > p, h4 
+			line-height: 20px
+			& > a 
+				text-decoration: underline
+				color: inherit
+		& > p 
+			margin-bottom: 10px
+	&__bold
+		font-size: 32px
+
+@media screen and (max-width: 960px)
+	.nineth
+		margin-top: 50px
+		& > .wrap
+			display: flex 
+			flex-direction: column 
+			justify-content: space-between
+			align-items: center
+			& > img 
+				width: 100%
+				margin-bottom: 15px
+	.map_card
+		width: 100%
+
+.tenth
+	margin-top: 95px
+	width: 100%
+	max-width: 960px
+	margin-left: auto
+	margin-right: auto 
+	padding: 40px 0 30px 0
+	background: linear-gradient(86.03deg, #C8F0EB 13.54%, #C3F1FA 89.17%)
+	& > .wrap
+		width: 100%
+		max-width: 830px
+
+@media screen and (min-width: 960px)
+	.form
+		&__straight
+			margin-top: 38px
+			padding: 23px 35px 25px 55px
+			width: 100% !important
+			flex-direction: row
+			align-items: center
+			justify-content: space-between
+			& input[type='range']
+				width: 224px
+				margin-right: 137px
+			& > .wrapper2
+				margin: 0
+				& .form_label
+					top: 14px
+					left: -10px
+				& .form_label2
+					left: 200px
+			& .form_label
+				top: 14px
+				left: -10px
+			& .form_label2
+				left: 180px
+			& > .wrapper
+				width: 238px
+				height: 100%
+			& .btn
+				position: static
+	.form_caption__straight
+		margin-top: 15px
+
+
+@media screen and (max-width: 959px)
+	.tenth
+		& h2, h3, .h4_light
+			width: 100%
+			text-align: center
+		& .h4_light
+			margin-top: 30px
+	.form
+		&__straight
+			margin-top: 25px
+			margin-left: auto
+			margin-right: auto
+
+@media screen and (max-width: 500px)
+	.tenth
+		margin-top: 50px
+		& .form__straight
+			width: 95%
+			& .form_label
+				top: 14px
+				left: -20px
+			& .form_label2
+				left: 200px
+@media screen and (min-width: 960px)
+	.eleventh
+		&_map
+			min-height: 500px
+
+
+.eleventh
+	position: relative
+	margin-top: 65px
+	width: 100%
+	//background: url("../img/bg/Map.jpg") no-repeat center center
+	& > .wrap
+		display: flex
+		flex-direction: row
+		justify-content: flex-end 
+		align-items: center
+	&_box
+		position: absolute
+		top: 72px
+		right: calc((100% - 960px)/2)
+		width: 306px
+		padding: 35px 58px
+		transition: all 0.2s
+		z-index: 9
+		&__mobile
+			display: none
+		& > h3 
+			position: relative
+			margin-top: 15px
+			margin-bottom: 7px
+		& > p 
+			line-height: 20px
+		& .place
+			margin-top: 0
+			&:before 
+				position: absolute
+				top: 0px
+				left: -37px
+				display: inline-block
+				content: ''
+				width: 24px
+				height: 27px
+				background: url("../img/icons/Point.svg") no-repeat center center
+		& .tel
+			&:before 
+				position: absolute
+				top: 3px
+				left: -37px
+				display: inline-block
+				content: ''
+				width: 24px
+				height: 27px
+				background: url("../img/icons/tel.svg") no-repeat center center
+		& .email
+			&:before 
+				position: absolute
+				top: 0px
+				left: -35px
+				display: inline-block
+				content: ''
+				width: 24px
+				height: 27px
+				background: url("../img/icons/mail.svg") no-repeat center center
+		& .btn
+			margin-top: 20px
+
+@media screen and (max-width: 960px)
+	.eleventh
+		margin-top: 50px
+
+@media screen and (max-width: 960px)
+	.eleventh
+		position: static
+		&_map
+		&_box
+			display: none
+			&__mobile
+				position: static
+				margin-top: 20px
+				display: block
+				width: 100%
+				z-index: 9
+
+footer 
+	margin-top: 65px
+	margin-bottom: 30px
+	padding-top: 30px
+	background: #FFFFFF
+	box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.1)
+	& > .wrap
+		display: flex
+		flex-direction: row
+		align-items: flex-start
+		justify-content: space-between
+		flex-wrap: wrap
+	& > .wrap2
+		margin-top: 35px
+		& > h3 
+			margin-bottom: 7px
+		& > p 
+			line-height: 20px
+
+.footer_list__hide
+	display: none
+
+.footer_img__reflect
+	transform: scale(1, -1)
+
+.footer
+	&_menu
+		width: 90%
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: flex-start
+		flex-wrap: wrap
+		margin-top: 15px
+		& > li 
+			line-height: 20px
+			margin-right: 15px
+			&:last-child
+				margin-top: 10px
+				margin-right: 0
+	&_contacts
+		margin: 0 !important
+		& p 
+			margin-bottom: 7px
+			line-height: 20px
+		& h3 
+			line-height: 24px
+		& li 
+			margin-top: 15px
+			&:first-child
+				margin-top: 0
+	&_payments
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: flex-start
+		& > li 
+			margin-right: 45px
+			&:last-child
+				margin-right: 0
+	&_age
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: flex-start
+		& > p
+			margin-left: 12px
+			line-height: 20px
+	&_adress
+		margin-top: 48px
+		& > p 
+			line-height: 20px
+			margin-bottom: 7px
+	&_card
+		margin-top: 35px
+		margin-bottom: 35px
+		padding: 30px 82px
+		transition: all 0.2s
+		&:hover
+			-webkit-transform: scale(1.05)
+			-ms-transform: scale(1.05)
+			transform: scale(1.05)
+	&_list
+		& > li 
+			margin-top: 8px
+			& > p 
+				line-height: 20px
+			&:first-child
+				margin-top: 10px
+				max-width: 560px
+				display: flex
+				flex-direction: row
+				align-items: center
+				justify-content: space-between
+				& > img 
+					margin-left: 15px
+
+@media screen and (max-width: 890px)
+	.wrap2, .wrap2.wrap
+		margin-top: 0
+	.third_column
+		margin-top: 30px
+	.footer_card
+		padding: 20px 40px
+
+@media screen and (max-width: 556px)
+	.footer
+		&_menu
+			width: 100%
+			& > li 
+				&:last-child
+					margin-top: 0
+	.second_column
+		margin-top: 30px
+	.third_column
+		width: 100%
+		& > .footer_age
+			margin-top: 25px
+			margin-bottom: 25px
+			justify-content: center
+
+@media screen and (max-width: 640px)
+	.footer_list
+
+.blur 
+	filter: blur(2px)
+
+.file
+	position: relative
+	width: 100%
+	height: 50px
+
+.btn__file
+	position: absolute
+	top: 0
+	left: 0
+	display: flex
+	text-align: center
+	justify-content: center
+	width: 49%
+	background: $gold
+	border-radius: 6px
+	padding: 6px 20px
+	text-align: center
+	font-size: 14px
+	line-height: 28px
+	letter-spacing: 0.04em
+	transition: all 0.5s
+	z-index: 1 !important
+	&:hover
+		cursor: pointer
+		background: $black
+		color: $gold
+	& > img 
+		margin-right: 12px
+.close
+	width: 100%
+	height: 100vh
+	position: fixed
+	left: 0
+	top: 0
+	z-index: -1
+.popup__hidden
+	display: none !important
+
+.btn__file__mobile
+		display: none
+
+.popup
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100vh
+	background: rgba(15, 15, 14, 0.8)
+	z-index: 9999
+	&_card
+		margin-top: 20vh
+		margin-left: auto
+		margin-right: auto
+		padding: 65px 40px
+		width: 500px
+		background: #fefefe
+		z-index: 5
+		& > h2 
+			margin-bottom: 25px
+		& input[type="text"]
+			width: 100%
+			height: 40px
+			padding-left: 20px
+			padding-top: 10px
+			padding-bottom: 10px
+			margin-bottom: 12px
+			border-radius: 12px
+			background: #F4F5F5
+			border: none
+			outline: none
+			font-size: 16px
+			line-height: 18px
+			-webkit-appearance: none
+			-ms-appearance: none
+			-moz-appearance: none
+			appearance: none
+		& button[type="submit"]
+			width: 49%
+			background: $gold
+			border-radius: 6px
+			padding: 6px 20px
+			font-size: 14px
+			line-height: 28px
+			letter-spacing: 0.04em
+			transition: all 0.5s
+			-webkit-appearance: none
+			-ms-appearance: none
+			-moz-appearance: none
+			appearance: none
+			border: none
+			outline: none
+			float: right
+			&:hover
+				cursor: pointer 
+				background: $black
+				color: $gold
+		& input[type="file"]
+			position:absolute
+			top:0
+			left:0
+			width:100%
+			-moz-opacity: 0
+			filter: alpha(opacity=0)
+			opacity: 0
+			font-size: 150px
+			height: 30px
+			z-index: 9999 !important
+	&_close
+		position: relative
+		top: -30px
+		float: right
+		&:hover
+			cursor: pointer
+
+@media screen and (max-width: 600px)
+	.popup
+		&_card
+			padding: 40px 20px
+			width: 90%
+	.btn__file
+		display: none
+	.btn__file__mobile
+		display: flex
+
+.overflow
+	overflow: hidden
+
+.play
+	position: fixed
+	top: 0
+	left: 0
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	width: 100%
+	height: 100vh
+	background: rgba(15, 15, 14, 0.8)
+	z-index: 9999
+.smartphone
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	position: relative
+	padding: 65px 40px
+	width: 250px
+	height: 450px
+	border-radius: 25px
+	background: #fefefe
+	z-index: 5
+	& > video 
+		width: 230px
+		height: 410px
+		border-radius: 10px
+	&_close
+		position: absolute
+		top: -30px
+		right: -30px
+		background: #fefefe
+		border: 5px solid #fefefe
+		border-radius: 50%
+		transition: all 0.2s
+		&:hover
+			cursor: pointer
+			background: $gold
+			border: 5px solid $gold
+
+.credit-accepted
+	position: fixed
+	top: 0
+	left: 0
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+	align-items: flex-start
+	width: 100%
+	height: 100%
+	z-index: 9999
+	pointer-events: none
+	&_card
+		position: relative
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		width: 290px
+		height: 85px
+		margin-left: 30px
+		margin-bottom: -200px
+		border-radius: 10px
+		background: #fefefe
+		transition: margin-bottom 2s
+		& p 
+			line-height: 20px
+			float: right
+			width: 199px
+			margin-left: 11px
+
+		&__show
+			margin-bottom: 30px
+
+.h4_bold
+	font-weight: 600
+
+
+@media screen and (max-width: 700px)
+	.credit-accepted
+		&__show
+			margin-bottom: 60px
+
+.catalog
+	margin-top: 120px
+	& > .wrap
+		& h2 
+			margin-bottom: 20px
+	&_container
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: flex-start
+		flex-wrap: wrap
+	&_card
+		width: 225px
+		transition: transform 0.5s
+		& > .img_wrap
+			display: flex
+			font-display: column
+			justify-content: center
+			align-items: center
+			width: 100%
+			height: 170px
+			background: linear-gradient(86.03deg, #C8F0EB 13.54%, #C3F1FA 89.17%)
+			border-top-left-radius: 10px
+			border-top-right-radius: 10px
+		& > .wrap_btn
+			display: flex
+			flex-direction: row
+			justify-content: center
+			margin-bottom: 35px
+		& > ul 
+			min-height: 80px
+			margin: 0
+			margin-left: 41px
+			margin-right: 20px
+			margin-bottom: 20px
+			font-size: 14px
+			line-height: 20px
+			font-family: Futura PT
+			& > li 
+				position: relative
+				&:before 
+					position: absolute
+					top: 7px
+					left: -16px
+					display: inline-block
+					content: ''
+					width: 6px
+					height: 6px
+					background: $gray3
+					border-radius: 3px
+		& > img 
+			margin-top: 10px
+			margin-left: 25px
+			margin-bottom: 7px
+
+@media screen and (min-width: 961px)
+	.catalog
+		&_card
+			&:hover
+				-webkit-transform: scale(1.05)
+				-ms-transform: scale(1.05)
+				transform: scale(1.05)
+
+@media screen and (max-width: 960px)
+	.catalog
+		margin-top: 100px
+		& > .wrap
+			& > h2 
+				margin-bottom: 15px
+		&_card
+			margin-top: 20px
+	.catalog2
+		margin-bottom: 0 !important
+
+@media screen and (max-width: 520px)
+	.catalog
+		&_card
+			width: 48%
+			& ul 
+				margin-left: 15px
+				margin-right: 15px
+				& li 
+					&:before 
+						display: none
+			& > img 
+				width: 80%
+				margin-left: 15px
+.banner
+	margin-top: 65px
+	margin-bottom: 65px
+	& > .wrap
+	&_card
+		padding: 40px 190px 30px 65px
+		background: url("../img/catalog/advice 1.png") no-repeat 90% center
+		& > h3 
+			margin-bottom: 7px
+
+@media screen and (max-width: 540px)
+	.banner
+		margin-top: 35px
+		margin-bottom: 35px
+		&_card
+			padding: 20px 35px 20px 35px
+			background: #fefefe
+
+.catalog2
+	margin-top: 0
+	margin-bottom: 95px
